@@ -1,7 +1,7 @@
 import React from "react";
 import { StyledButton, StyledCard } from "./style";
 
-export const Card: React.FC<ICard> = ({
+const Card: React.FC<ICard> = ({
   children,
   variant = 0,
   onDelete = () => {},
@@ -26,6 +26,8 @@ export const Card: React.FC<ICard> = ({
     </StyledCard>
   );
 };
+
+export default React.memo(Card);
 
 const COLORS: string[] = ["#F56236", "#FCE788", "#88FCA3"];
 

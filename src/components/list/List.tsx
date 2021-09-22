@@ -1,8 +1,8 @@
 import { AnimatePresence } from "framer-motion";
 import React from "react";
 import { Message } from "../../Api";
+import { Card } from "../../components";
 import { MessageType, useNuffContext } from "../../context";
-import { Card } from "../card/Card";
 import { StyledCount, StyledListContainer, StyledListTitle } from "./style";
 
 const List: React.FC<IList> = ({ title = "", type = "error" }) => {
